@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+
+  
+@keyframes leaves {
+        0% {
+            transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+        }
+        100% {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+        }
+    }
+
+    .Leaves {
+        animation: leaves 0.2s ease-in-out;
+        -webkit-animation: leaves 0.2s ease-in-out;
+    }
+    
+body{
+  /* background:#ffc8c8; */
+  background-image: url(images/outrun-neon-dark-background-purple-1920x1080-4523.jpg);
+  background-size: cover;
+  overflow:hidden;
+  height:100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600;
+  display: flex;
+  flex-direction:column; 
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.keyboard{
+  width: 850px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.row{
+  padding:0;
+  list-style-type:none;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.row div{
+  display: flex;
+}
+.key{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:50px;
+  height:50px;
+  background-image: radial-gradient(#e2a3f9,#a144a8);
+  border-radius: 1.2rem;
+ }
+
+ 
+.key:hover{
+  cursor:pointer;
+}
+
+
+.space{
+  width: 300px;
+  background-image: url(images/b6.jpg);
+  background-size: cover;
+  filter: brightness(200%);
+}
+.space:hover{
+  filter: brightness(150%);
+}
